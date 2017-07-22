@@ -8,7 +8,7 @@ $('#design').scroll(function(){
   // if(y_scroll_pos > scroll_pos_test) {
 
     $('.artwork-collage').css({
-      'transform' : 'translate( 0,' + imageScroll /-10 +'%)'
+      'transform' : 'translate( 0,' + imageScroll /-50 +'%)'
     });
 
     // }

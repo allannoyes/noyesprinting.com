@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Khand:700|Roboto:300,400,700');
+
+
+$navy: #0E244E;
+$orange: #FF621C;
+$teal: #0CEBD9;
+$off-white: #FAFDFF;
+$font-roboto: 'Roboto', Arial, sans-serif;
+$font-khand: 'Khand', Arial, sans-serif;
+
+
+
+img {
+  width: 100%;
+}
+
+
+
+/*********** NAVIGATION *******/
+
+nav {
+  position: fixed;
+  padding: 20px 2%;
+  width: 96%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));
+  z-index: 5000;
+}
+
+#logo {
+  position: relative;
+  z-index: 10002;
+  cursor: pointer;
+}
+
+#hamburger-menu {
+  float: right;
+  cursor: pointer;
+}
+
+#store-quick-link {
+  float: right;
+  margin-right: 20px;
+  font: 700 17px $font-khand;
+  color: $orange;
+  cursor: pointer;
+}
+
+#close-menu {
+  position: absolute;
+  right: 2%;
+  z-index: 10001;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-expanded {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: rgba($navy, .8);
+  display: none;
+
+  ol {
+    text-align: center;
+    text-transform: uppercase;
+    font: 700 3em $font-khand;
+    color: $off-white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    li {
+      padding: 2vh 0;
+    }
+  }
+}
+
+
+
+
+/******** GENERAL TYPOGRAPHY *******/
+
+h1 {
+  margin: 0;
+  color: $navy;
+  font: 700 3.5em $font-khand;
+  text-transform: uppercase;
+  line-height: .9;
+}
+
+.problem {
+  margin: 0 0 -5px;
+  color: $orange;
+  font: 700 1.5em $font-khand;
+  text-transform: uppercase;
+  // text-decoration: line-through solid $teal;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: '';
+    border-bottom: 6px solid $teal;
+    opacity: .8;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+}
+
+p {
+  font: 300 15px $font-roboto;
+  line-height: 1.5;
+}
+
+
+
+
+/******** LAYOUT ********/
+
+section {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid $teal;
+  position: relative;
+  background: $off-white;
+}
+
+.landing-page {
+  background: url('../img/landing-background.png') no-repeat, no-repeat, fixed, center;
+  background-size: cover;
+  height: 100vh;
+
+  h1 {
+    color: $teal;
+    font-size: 85px;
+  }
+
+  p {
+    color: $off-white;
+  }
+}
+
+.vertical-centered-text {
+  width: 35%;
+  margin: 0 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.store-mockup {
+  width: 50%;
+  position: absolute;
+
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  // img {
+  //   width: 100%;
+  // }
+}
+
+.artwork-collage {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 35%;
+}
+
+#design {
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+}
+
+
+
+.scroll-button {
+  width: 40px;
+  height: 40px;
+  border: solid 1px $orange;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  cursor: pointer;
+
+  .down-arrow {
+    width: 14px;
+    height: 14px;
+    margin: 8px 12px;
+    border-right: solid 1px $orange;
+    border-bottom: solid 1px $orange;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+}
+
+button {
+  min-width: 120px;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+  font: 700 15px $font-roboto;
+  padding: 10px 18px;
+  border: 3px solid $orange;
+
+  &.b-quote {
+    background: $orange;
+    color: $navy;
+  }
+
+  &.b-primary {
+    color: $orange;
+  }
+}

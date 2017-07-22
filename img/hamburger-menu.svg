@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3279 1736 39 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #0cebd9;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="39" height="36"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_2" data-name="Repeat Grid 2" class="cls-2" transform="translate(3279 1736)">
+    <g id="Group_40" data-name="Group 40" transform="translate(-1239 -80)">
+      <rect id="Rectangle_52" data-name="Rectangle 52" class="cls-3" width="39" height="5" transform="translate(1239 80)"/>
+    </g>
+    <g id="Group_41" data-name="Group 41" transform="translate(-1239 -67)">
+      <rect id="Rectangle_53" data-name="Rectangle 53" class="cls-3" width="39" height="5" transform="translate(1239 80)"/>
+    </g>
+    <g id="Group_42" data-name="Group 42" transform="translate(-1239 -54)">
+      <rect id="Rectangle_54" data-name="Rectangle 54" class="cls-3" width="39" height="5" transform="translate(1239 80)"/>
+    </g>
+  </g>
+</svg>

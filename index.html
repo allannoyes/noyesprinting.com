@@ -3,6 +3,9 @@
   <title>NoYes Printing</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon"
+      type="image/png"
+      href="http://example.com/myicon.png">
 </head>
 <body>
   <!-- <nav>
@@ -23,13 +26,19 @@
     <div class="vertical-centered-text">
       <h1>Taking care of details,<br>so you don't</h1>
       <p>When ordering  screen printed apparel, stop dealing with the order forms, money and seperating all of the orders. NoYes Printing can take the worry out of your hands and let you get back to work.</p>
-      <button class="b-primary">Learn More</button>
-      <button class="b-quote">Let's Chat</button>
+      <a href="#ordering"><button class="b-primary">Learn More</button></a>
+      <a href="#contact"><button class="b-quote">Let's Chat</button></a>
     </div>
     <div class="scroll-button">
-    <div class="down-arrow"></div></div>
+      <div class="down-arrow"></div>
+    </div>
   </div>
   <section id="ordering">
+    <div class="shadow">
+    </div>
+    <div class="store-mockup">
+      <img src="img/online-store-mockup_1.jpg" alt="Online store mockup on computer and phone">
+    </div>
     <div class="vertical-centered-text">
       <h2 class="problem">ORDER FORMS</h2>
       <h1>LET’S MAKE IT DIGITAL</h1>
@@ -37,11 +46,10 @@
       <p>Oh, and did we forget to mention that we accept payments through our online store. Now you don’t have to hold onto that pile of checks and cash with a paperclip.</p>
       <button class="b-primary">See Example</button>
     </div>
-    <div class="store-mockup">
-      <img src="img/online-store-mockup-responsive.png" alt="Online store mockup on computer and phone">
-    </div>
   </section>
   <section id="fulfillment">
+    <div class="shadow">
+    </div>
     <div class="vertical-centered-text">
       <h2 class="problem">ORDER FULLFILLMENT</h2>
       <h1>JUST HAND THEM OUT</h1>
@@ -49,40 +57,54 @@
     </div>
   </section>
   <section id="design">
+    <div class="shadow">
+    </div>
+
     <div class="vertical-centered-text">
       <h2 class="problem">PRE-EXISTING DESIGN</h2>
       <h1>NEED A DESIGN TOO?</h1>
       <p>To top it off, if you aren’t sure what you want, we can help you create a custom design. We don’t like replicating designs found online because we feel you should have your own look (and it’s against the law). Feel free to look at some of the work that we have done so far.</p>
     </div>
-    <div>
-      <img class="artwork-collage" src="img/custom-designs.png" alt="Collage of custom artwork for apparel">
+    <div class="artwork-collage">
+      <img src="img/WingerVolleyball.png" alt="Collage of custom artwork for apparel">
+      <img src="img/JandtReunion.png" alt="Collage of custom artwork for apparel">
+      <img src="img/RWELC.png" alt="Collage of custom artwork for apparel">
+      <img src="img/WingerLacrosse.png" alt="Collage of custom artwork for apparel">
+      <img src="img/Boxing.png" alt="Collage of custom artwork for apparel">
+      <img src="img/SunnysideSchool.png" alt="Collage of custom artwork for apparel">
     </div>
   </section>
   <section id="contact">
     <div class="vertical-centered-text">
       <h1>LET'S CHAT</h1>
       <p>We would love to work with you and help make your life a little easier. Give us holla or a folla and get started.</p>
-      <h3>Phone</h3>
-      <p>507-828-7751</p>
-      <h3>Email</h3>
-      <p>allan@noyesprinting.com</p>
-      <h3>ADDRESS</h3>
-      <p>497 East 7th St.<br>
-        Red Wing, MN 55066</p>
-    </div>
-    <div class="contact-form">
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-        <h3>Name</h3>
-        <input type="text" name="name">
-        <h3>E-mail</h3>
-        <input type="email" name="email">
-        <h3>Message</h3>
-        <textarea rows="10" type="text" name="message"></textarea>
-        <br>
-        <br>
-        <button class="b-primary" type="reset" value="Reset">Reset</button>
-        <button class="b-quote" type="submit" value="Submit">Send</button>
-      </form>
+      <div class="contact-form">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <h3>Name</h3>
+          <input type="text" name="name">
+          <h3>E-mail</h3>
+          <input type="email" name="email">
+          <h3>Message</h3>
+          <textarea rows="10" type="text" name="message"></textarea>
+          <br>
+          <br>
+          <button class="b-primary" type="reset" value="Reset">Reset</button>
+          <button class="b-quote" type="submit" value="Submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Phone</h3>
+        <p>507-828-7751</p>
+      </div>
+      <div class="contact-info">
+        <h3>ADDRESS</h3>
+        <p>497 East 7th St.<br>
+          Red Wing, MN 55066</p>
+      </div>
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p>allan@noyesprinting.com</p>
+      </div>
     </div>
   </section>
   <script src="js/jquery-3.2.1.slim.min.js"></script>
